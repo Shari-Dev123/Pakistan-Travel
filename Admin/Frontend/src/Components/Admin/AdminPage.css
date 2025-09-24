@@ -1,0 +1,142 @@
+.admin-wrapper {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #eef2f6;
+  color: #333;
+}
+
+.admin-sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #0a3d62, #053054);
+  color: #fff;
+  padding: 25px 20px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.admin-sidebar .logo {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-sidebar ul li {
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.admin-sidebar ul li.active,
+.admin-sidebar ul li:hover {
+  background: #1e5fa0;
+}
+
+.admin-main {
+  flex: 1;
+  padding: 30px;
+  background: #f8f9fa;
+}
+
+.dashboard h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  padding: 22px;
+  border-radius: 14px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.card.total { border-left: 6px solid #6c5ce7; }
+.card.pending { border-left: 6px solid #e17055; }
+.card.confirmed { border-left: 6px solid #00b894; }
+.card.sent { border-left: 6px solid #0984e3; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+th, td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background: #0a3d62;
+  color: #fff;
+  font-weight: 600;
+}
+
+tr:hover td {
+  background: #f5f5f5;
+}
+
+.status-pending { color: #e17055; font-weight: 600; }
+.status-confirmed { color: #00b894; font-weight: 600; }
+.status-sent { color: #0984e3; font-weight: 600; }
+
+.confirm-btn, .whatsapp-btn {
+  border: none;
+  padding: 9px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #fff;
+  transition: background 0.25s ease;
+}
+
+.confirm-btn { background: #00b894; }
+.confirm-btn:hover { background: #019874; }
+
+.whatsapp-btn { background: #25D366; }
+.whatsapp-btn:hover { background: #1da851; }
+
+.ticket-sent {
+  color: #666;
+  font-style: italic;
+}

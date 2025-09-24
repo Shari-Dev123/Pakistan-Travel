@@ -1,0 +1,49 @@
+.destinations {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.destinations .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.overlay {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.overlay h1 {
+  font-size: 2.4rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.overlay p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.img-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.img-gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.img-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
