@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
-import "./Bookingform.css";
+import "./BookingForm.css";
 
 export default function BookingForm() {
   const location = useLocation();
